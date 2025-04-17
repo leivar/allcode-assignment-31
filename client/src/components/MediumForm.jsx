@@ -33,12 +33,6 @@ export default function MediumForm() {
     });
   };
 
-  function stopRefreshEvent(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    e.nativeEvent.stopImmediatePropagation();
-  };
-
   function tasksReducer(tasks, action) {
     switch (action.type){
       case 'added': {
